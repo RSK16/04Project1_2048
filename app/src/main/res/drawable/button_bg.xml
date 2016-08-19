@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--注意：selector里需要把默认情况下使用的图片放在选择器最后-->
+
+
+    <item android:state_pressed="true" android:drawable="@drawable/button_state2_bg"></item>
+    <item android:drawable="@drawable/button_state1_bg"></item>
+</selector>

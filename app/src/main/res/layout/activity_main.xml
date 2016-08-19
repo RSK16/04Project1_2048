@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.cskaoyan.zhao.a04project1_2048.MainActivity">
+
+    <!--第一部分：显示分数信息-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        >
+    <com.cskaoyan.zhao.a04project1_2048.view.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2048"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:padding="10px"
+        android:background="@drawable/textviewgb"
+        android:id="@+id/tv_mainactivity_targetsocre"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Score"
+               android:layout_margin="8px"
+               android:gravity="center"
+               android:background="@drawable/textviewgb2"
+               android:textSize="25sp"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginLeft="10px"
+               android:layout_marginRight="10px"
+               android:gravity="center"
+               android:id="@+id/tv_mainactivity_score"
+               android:background="@drawable/textviewgb3"
+               android:textSize="15sp"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Record"
+               android:layout_margin="8px"
+               android:gravity="center"
+               android:background="@drawable/textviewgb2"
+               android:textSize="25sp"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginLeft="10px"
+               android:layout_marginRight="10px"
+               android:gravity="center"
+               android:id="@+id/tv_mainactivity_record"
+               android:background="@drawable/textviewgb3"
+               android:textSize="15sp"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+    <!--第二部分：显示棋盘-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_mainactivity_center"
+        android:background="#888888">
+
+       <!-- <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/gl_mainactivity_container">
+
+            &lt;!&ndash;<com.cskaoyan.zhao.a04project1_2048.view.NumberItem>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"/>
+            </com.cskaoyan.zhao.a04project1_2048.view.NumberItem>&ndash;&gt;
+
+
+        </GridLayout>-->
+
+    </RelativeLayout>
+
+
+    <!--第三部分：显示button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="revert"
+            android:background="@drawable/button_bg"
+            android:id="@+id/bt_mainactivity_revert"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="restart"
+            android:background="@drawable/button_bg"
+            android:id="@+id/bt_mainactivity_restart"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="option"
+            android:background="@drawable/button_bg"
+            android:id="@+id/bt_mainactivity_option"/>
+    </LinearLayout>
+
+</LinearLayout>
